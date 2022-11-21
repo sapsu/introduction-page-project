@@ -81,3 +81,7 @@ h3 {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
+.carousel-image {
+  max-width: 456px;
+  max-height: 317px;
+}
