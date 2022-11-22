@@ -1,11 +1,13 @@
 :root {
+  --background-color: #f0fbff;
   --primary-color: #aaaaaa;
   --secondary-color: #a4ebf3;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  --link-color: #314749;
 }
 body {
   margin-top: 40px;
-  background-color: #f0fbff;
+  background-color: var(--background-color);
 }
 
 h1,
@@ -68,15 +70,20 @@ h3 {
 .email-link {
   display: flex;
   justify-content: center;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 28px;
   text-decoration: none;
   transition: ease-in 100ms all;
 }
-
-.email-link:hover {
-  text-decoration: underline;
+.shecodes-link {
+  text-decoration: none;
   color: var(--primary-color);
+}
+
+.email-link:hover,
+.shecodes-link:hover {
+  text-decoration: underline;
+  color: var(--link-color);
 }
 .contact-link:hover {
   background-color: var(--secondary-color);
